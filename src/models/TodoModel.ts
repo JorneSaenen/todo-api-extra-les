@@ -2,13 +2,14 @@ import mongoose from "mongoose";
 
 const todoSchema = new mongoose.Schema(
   {
-    task: {
+    title: {
       type: String,
       required: true,
       trim: true,
     },
-    done: {
+    completed: {
       type: Boolean,
+      required: true,
       default: false,
     },
   },
